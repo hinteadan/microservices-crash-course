@@ -27,6 +27,8 @@ namespace HttpMicroserviceAlpha
                 return HttpStatusCode.OK;
             };
 
+            Get["/time"] = _ => Response.AsText(DateTime.Now.ToString());
+
             Post["/process", true] = async (_, c) =>
             {
                 Console.WriteLine($"Processing @ {DateTime.Now}");

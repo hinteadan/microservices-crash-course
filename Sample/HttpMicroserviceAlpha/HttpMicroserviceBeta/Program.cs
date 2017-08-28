@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace HttpMicroserviceBeta
@@ -17,6 +19,17 @@ namespace HttpMicroserviceBeta
             {
                 host.Start();
                 Console.WriteLine($"Running Beta Microservice on {url} ");
+                Task.Run(() =>
+                {
+                    while (true)
+                    {
+                        using (var http = new HttpClient())
+                        {
+                            Console.WriteLine($"Time on Microservice Alpha is {http.GetStringAsync("http://localhost:9991/time").Result}");
+                        }
+                        Thread.Sleep(2000);
+                    }
+                });
                 Console.ReadLine();
             }
         }
