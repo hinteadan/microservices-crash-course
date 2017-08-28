@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpMicroserviceBeta", "Htt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpMicroserviceOmega", "HttpMicroserviceOmega\HttpMicroserviceOmega.csproj", "{27D1A5C0-3972-4616-9735-4A0B21A87820}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationAlpha", "WebApplicationAlpha\WebApplicationAlpha.csproj", "{C32CA938-F3D8-46D5-92AC-8AB0C1CB1784}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{27D1A5C0-3972-4616-9735-4A0B21A87820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27D1A5C0-3972-4616-9735-4A0B21A87820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27D1A5C0-3972-4616-9735-4A0B21A87820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C32CA938-F3D8-46D5-92AC-8AB0C1CB1784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32CA938-F3D8-46D5-92AC-8AB0C1CB1784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32CA938-F3D8-46D5-92AC-8AB0C1CB1784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32CA938-F3D8-46D5-92AC-8AB0C1CB1784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
