@@ -15,7 +15,7 @@ namespace HttpMicroserviceOmega
             using (var host = new NancyHost(url))
             {
                 host.Start();
-                Console.WriteLine($"Running Omega Microservice on ${url} ");
+                Console.WriteLine($"Running Omega Microservice on {url} ");
                 Console.ReadLine();
             }
         }

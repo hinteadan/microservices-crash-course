@@ -16,7 +16,7 @@ namespace HttpMicroserviceBeta
             using (var host = new NancyHost(url))
             {
                 host.Start();
-                Console.WriteLine($"Running Beta Microservice on ${url} ");
+                Console.WriteLine($"Running Beta Microservice on {url} ");
                 Console.ReadLine();
             }
         }

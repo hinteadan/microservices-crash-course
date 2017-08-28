@@ -16,7 +16,7 @@ namespace HttpMicroserviceAlpha
             using (var host = new NancyHost(url))
             {
                 host.Start();
-                Console.WriteLine($"Running Alpha Microservice on ${url} ");
+                Console.WriteLine($"Running Alpha Microservice on {url} ");
                 Console.ReadLine();
             }
         }
